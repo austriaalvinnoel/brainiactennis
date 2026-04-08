@@ -1,5 +1,6 @@
 'use client'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 
 const links = [
@@ -16,9 +17,8 @@ export default function Navbar() {
   return (
     <nav className="bg-brand-dark sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-14">
-        <Link href="/" className="flex items-center gap-2 text-white font-medium text-sm">
-          <span className="text-brand-green text-lg font-semibold">B</span>
-          BrainiacTennis
+        <Link href="/" className="flex items-center">
+          <Image src="/brainiacfont-logo.png" alt="BrainiacTennis" width={140} height={40} className="h-8 w-auto" />
         </Link>
 
         {/* Desktop */}
